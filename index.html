@@ -1,175 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://kit.fontawesome.com/7bddbd4a78.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="hover.css">
-    <meta charset="utf-8">
-    <meta http-equiv=”X-UA-Compatible“ content=”IE=edge“>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Dark Mode</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li> <a href="#welcome-section">Home</a> </li>
-          <li> <a href="#projects">Projects</a> </li>
-          <li> <a href="#contact">Contact</a> </li>
-        </ul>
-      </nav>
-    </header>
-    <section id="welcome-section">
-     <h1 class="hajeden"><a href="https://github.com/tomek-m-coder"><img src="https://readme-typing-svg.herokuapp.com?font=Raleway&size=30&letterSpacing=small&pause=1000&color=65EAF7&width=435&lines=Hi%2C+I'm+Thomas+Anstey-Lewis." alt="Typing SVG" /></a></h1>
-     <h2>Half-Front-End Developer &nbsp;<i class="fas fa-smile-wink"></i></h2>
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+      <span id="toggle-icon">
+        <span class="toggle-text">Light Mode</span>
+        <i class="fa fa-sun-o"></i>
+      </span>
+      <label class="theme-switch">
+        <input type="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="title-group">
+        <h1>Custom Title Here</h1>
+        <h2>Welcome to the website!</h2>
+      </div>
     </section>
 
+    <!-- About -->
+    <section id="about">
+      <h1>Undraw Illustrations</h1>
+      <div class="about-container">
+        <div class="image-container">
+          <h2>Web Innovation</h2>
+          <img
+            src="img/undraw_proud_coder_lightt.svg"
+            alt="Proud Coder"
+            id="image1"
+          />
+        </div>
+        <div class="image-container">
+          <h2>High Concept</h2>
+          <img
+            src="img/undraw_conceptual_idea_light.svg"
+            alt="Conceptual Idea"
+            id="image2"
+          />
+        </div>
+        <div class="image-container">
+          <h2>Problem Solving</h2>
+          <img
+            src="img/undraw_feeling_proud_light.svg"
+            alt="Feeling Proud"
+            id="image3"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section id="projects">
-      <p>Hi, I'm Thomas Anstey-Lewis. A young, ambitious, confident, driven programmer.</p>
-      <p class="hero-description">This portfolio and the projects in it were created by me in less than 3 weeks with the intention of getting into a college in Coventry. As a young person who has focused on self-development since childhood,
-           I believe I would be a good candidate for a student at this institution. For learning I was using <a href="https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/" target="_blank">Udemy</a>
-            And <a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp</a>.
-        <br>
-        <br>
-        <strong>Everyone can learn coding:)</strong>
-        <br>
-        <br>
-        
-      </p>
-     <h2> My projects</h2>
-     <div id="container">
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/RJG/" target="_blank"><img src="img/1.png"></a>
-         <p><a href="https://tomek-m-coder.github.io/RJG/" target="_blank"> Voice jokes generator</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Music-player/" target="_blank"><img src="img/10.png"></a>
-         <p><a href="https://tomek-m-coder.github.io/Music-player/" target="_blank">My music audio player</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Math-sprint-game/" target="_blank"> <img src="img/3.png"></a>
-         <p><a href="https://tomek-m-coder.github.io/Math-sprint-game/" target="_blank">Math sprint game</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Animated-Template/"> <img src="img/4.png">
-         <p><a href="https://tomek-m-coder.github.io/Animated-Template/" target="_blank">Animated template</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/dragndrop/"> <img src="img/5.png">
-         <p><a href="https://tomek-m-coder.github.io/dragndrop/" target="_blank">Drag and drop</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/JS-Calculator/"> <img src="img/6.png">
-         <p><a href="https://tomek-m-coder.github.io/JS-Calculator/" target="_blank">JS calculator</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Eileen-Art-Page/" target="_blank"> <img src="img/7.png"></a>
-         <p><a href="https://tomek-m-coder.github.io/Eileen-Art-Page/" target="_blank">Paid project for Customer</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Splash-Page/"><img src="img/8.png"></a>
-         <p><a href="https://tomek-m-coder.github.io/Splash-Page/" target="_blank">Splash page</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Animated-navigation/"><img src="img/9.png"></a>
-         <p><a href="https://tomek-m-coder.github.io/Animated-navigation/" target="_blank">Animated navigation</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Nasa-API/"> <img src="img/2.png"></a>
-         <p><a href="https://tomek-m-coder.github.io/Nasa-API/" target="_blank">NASA picture of the day</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Video-Player/"> <img src="img/11.png"></a>
-         <p><a href="https://tomek-m-coder.github.io/Video-Player/" target="_blank">Video player</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Form-Validation/"> <img src="img/12.png"></a>
-         <p><a href="https://tomek-m-coder.github.io/Form-Validation/" target="_blank">Form validation</a></p>
-       </div>
-
-       <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Bookmark/">  <img src="img/13.png"></a>
-        <p><a href="https://tomek-m-coder.github.io/Bookmark/" target="_blank">Bookmark</a></p>
+      <h1>Buttons</h1>
+      <div class="buttons">
+        <button class="primary">Primary</button>
+        <button class="secondary">secondary</button>
+        <button class="primary" disabled>disabled</button>
+        <button class="outline">outline</button>
+        <button class="secondary outline">alt outline</button>
+        <button class="outline" disabled>disabled</button>
       </div>
-
-      <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/RPSLS/"> <img src="img/14.png"></a>
-        <p><a href="https://tomek-m-coder.github.io/RPSLS/" target="_blank">Rock,paper,scissors,lizard,spock</a></p>
+      <div class="text-box" id="text-box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id beatae
+          laborum et nobis, reprehenderit aspernatur in architecto quo pariatur
+          neque?
+        </p>
       </div>
-
-      <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Custom-Countdown/"> <img src="img/15.png"></a>
-        <p><a href="https://tomek-m-coder.github.io/Custom-Countdown/" target="_blank">Custom countdown</a></p>
-      </div>
-
-      <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Paint-Clone/">  <img src="img/16.png"></a>
-        <p><a href="https://tomek-m-coder.github.io/Paint-Clone/" target="_blank">Paint clone</a></p>
-      </div>
-
-      <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Pong/">  <img src="img/17.png"></a>
-        <p><a href="https://tomek-m-coder.github.io/Pong/" target="_blank">Pong</a></p>
-      </div>
-
-      <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Light-Dark/">  <img src="img/18.png"></a>
-        <p><a href="https://tomek-m-coder.github.io/Light-Dark/" target="_blank">Light-Dark</a></p>
-      </div>
-
-      <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Picture-in-Picture/">  <img src="img/19.png"></a>
-        <p><a href="https://tomek-m-coder.github.io/Picture-in-Picture/" target="_blank">Picture-in-picture</a></p>
-      </div>
-
-      <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Infinite-Scroll/">  <img src="img/20.png"></a>
-        <p><a href="https://tomek-m-coder.github.io/Infinite-Scroll/" target="_blank">Infinite scroll</a></p>
-      </div>
-
-      <div class="project-tile">
-        <a href="https://tomek-m-coder.github.io/Quote-Generator/">  <img src="img/21.png"></a>
-        <p><a href="https://tomek-m-coder.github.io/Quote-Generator/" target="_blank">Quote generator</a></p>
-      </div>
-
-      
-     </div>
     </section>
 
-
+    <!-- Contact -->
     <section id="contact">
-      <h2>Available Anytime</h2>
-      <p> <em> And remember <q>If life gives you lemons <span>make lemonade</span>!</q> </em> </p>
-
-      <div class="social-media">
-        <a href="https://github.com/tomek-m-coder/" target="_blank" class="hvr-sink"><i class="fab fa-github">&nbsp; <p>GitHub</p></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="mailto:tomekmilkowski4@gmail.com" class="hvr-sink"><i class="fas fa-at">&nbsp; <p>E-mail</p></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="tel:7584-814838" class="hvr-sink"><i class="fas fa-mobile-alt">&nbsp; <p>Phone</p></i></a>
+      <div class="social-icons">
+        <i class="fa fa-github"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-medium"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
       </div>
-
     </section>
-    <hr>
-    <footer> &copy; tomek-m-coder | 2024</footer>
 
+    <script src="script.js"></script>
   </body>
 </html>
-
-
-<!-- class="hvr-sink">
-
-<i class="fab fa-github"></i>
-<i class="fas fa-at"></i>
-<i class="fas fa-mobile-alt"></i> -->
